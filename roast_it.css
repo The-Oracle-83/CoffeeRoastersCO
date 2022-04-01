@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Poiret";
+  src: url(MyFonts/PoiretOne.ttf);
+}
+
+@font-face {
+  font-family: "friz";
+  src: url(MyFonts/FrizQuadrata-BT-Roman.ttf);
+}
+
+@font-face {
+  font-family: "flat";
+  src: url(MyFonts/Flat_iron.ttf);
+}
+
+:root {
+  --clr-primary-200: #badc58;
+  --clr-primary-500: #728a58;
+  --clr-primary-900: #2e2001;
+  --clr-neutral-100: #95afc0;
+  --clr-neutral-900: #2c3033;
+
+  --ff-primary: friz;
+  --ff-accent: Poiret;
+  --ff-sub: flat;
+}
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--ff-sub);
+  color: #729744;
+  line-height: 0.7;
+  font-size: 2.5rem;
+  padding: 3em 10em 0 4em;
+}
+span {
+  margin-left: 50px;
+  color: #2e2001;
+}
+
+h2 {
+  font-family: var(--ff-accent);
+  font-size: 1rem;
+  margin-left: 100px;
+  line-height: 0;
+  text-align: right;
+}
+.first_sub {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  color: var(--clr-primary-500);
+  padding-top: 5rem;
+  line-height: 0.6;
+  letter-spacing: 0.2rem;
+}
+
+.first_lorem {
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-900);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  padding: 4em 10em 15em 15em;
+  line-height: 1.5;
+  background-color: white;
+  background-image: url(images/DSC0042-scaled.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 0% 100%;
+  max-width: 70%;
+  margin-right: 0;
+}
+
+.second_sub {
+  text-align: right;
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  color: var(--clr-primary-500);
+  padding-top: 5rem;
+  line-height: 0.6;
+  letter-spacing: 2;
+}
+
+.second_lorem {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  text-align: left;
+  padding: 4em 10em 4em 25em;
+  line-height: 1.5;
+  background-color: white;
+  background-image: url(images/istockphoto-602336684-170667a.jpeg);
+  background-repeat: no-repeat;
+  max-width: 70%;
+  margin-left: 0;
+}
+.brown_line {
+  width: 75%;
+  margin-right: 0;
+  margin-top: 0;
+  height: 10px;
+  background-color: var(--clr-primary-900);
+}
+
+.wrapper {
+  max-width: 80%;
+}
+
+.logo {
+  padding: 3rem;
+  background-image: url(images/green-grounds-logo.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+  cursor: pointer;
+}
+
+.primary_navigation {
+  border-bottom: 4px solid rgb(81, 99, 60);
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1440px;
+  height: 10vh;
+  font-family: var(--ff-accent);
+  font-size: 20px;
+  z-index: 99;
+}
+.nav_bar {
+  background-color: #729744;
+}
+
+.nav_links li {
+  display: inline-block;
+
+  padding: 0px 2em;
+}
+
+.nav_links li a {
+  text-decoration: none;
+}
+
+.cta button {
+  all: unset;
+}
+
+.banner_area {
+  background-image: url(images/roastershome.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  margin-top: 5rem;
+  margin-left: 0;
+  height: 85vh;
+}
+.hero {
+  background-image: url(images/171-Banner_Buy_Coffee.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 35rem;
+  left: 0;
+}
+
+.main_content {
+  background-image: url(images/burlap-wide.jpg);
+  margin-top: 15rem;
+  max-width: 1300px;
+  /*display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: auto;*/
+}
+
+.main_title {
+  display: inline-block;
+}
+
+.green_banner_1 {
+  margin-left: 0;
+  width: 60%;
+  height: 5vh;
+  background-color: var(--clr-primary-500);
+}
+
+.green_banner_2 {
+  margin-right: 0;
+  width: 60%;
+  height: 5vh;
+  background-color: var(--clr-primary-500);
+}
+
+.footer_banner {
+  background-image: url(images/cropped.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 55vh;
+  position: absolute;
+  left: 0;
+  display:flex;
+}
+
+
+.footer_links {
+  padding: 2em;
+  background-color: #728a58;
+  text-align: center;
+  width:10%;
+
+ 
+
+}
