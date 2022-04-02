@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Poiret";
+    src: url(MyFonts/PoiretOne.ttf);
+  }
+  
+  @font-face {
+    font-family: "friz";
+    src: url(MyFonts/FrizQuadrata-BT-Roman.ttf);
+  }
+  
+  @font-face {
+    font-family: "flat";
+    src: url(MyFonts/Flat_iron.ttf);
+  }
+  
+  :root {
+    --clr-primary-200: #badc58;
+    --clr-primary-500: #728a58;
+    --clr-primary-900: #2e2001;
+    --clr-neutral-100: #95afc0;
+    --clr-neutral-900: #2c3033;
+  
+    --ff-primary: friz;
+    --ff-accent: Poiret;
+    --ff-sub: flat;
+  }
+  *,
+  *::before,
+  *::after {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-family: var(--ff-sub);
+    color: #729744;
+    line-height: 0.7;
+    font-size: 2.5rem;
+    padding: 3em 10em 0 4em;
+  }
+  span {
+    margin-left: 50px;
+    color: #2e2001;
+  }
+  
+  h2 {
+    font-family: var(--ff-accent);
+    font-size: 1rem;
+    margin-left: 100px;
+    line-height: 0;
+    text-align: right;
+  }
+
+  .brown_line {
+    width: 75%;
+    margin-right: 0;
+    margin-top: 0;
+    height: 10px;
+    background-color: var(--clr-primary-900);
+  }
+  
+  .wrapper {
+    max-width: 80%;
+  }
+  
+  .logo {
+    padding: 3rem;
+    background-image: url(images/green-grounds-logo.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    cursor: pointer;
+  }
+  
+  .primary_navigation {
+    border-bottom: 4px solid rgb(81, 99, 60);
+    background-color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1440px;
+    height: 10vh;
+    font-family: var(--ff-accent);
+    font-size: 20px;
+    z-index: 99;
+  }
+  .nav_bar {
+    background-color: #729744;
+  }
+  
+  .nav_links li {
+    display: inline-block;
+  
+    padding: 0px 2em;
+  }
+  
+  .nav_links li a {
+    text-decoration: none;
+  }
+  
+  .cta button {
+    all: unset;
+  }
+  
+  .banner_area {
+    background-image: url(images/roastershome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    margin-top: 5rem;
+    margin-left: 0;
+    height: 60vh;
+  }
+  .hero {
+    background-image: url(images/Fair-Trade-Diagram.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 5px 6px 15px 2px #000000; /*from box-shadow generator*/
+    
+    background-color:#728a58;
+    padding: 1em;
+    height: 100vh;
+
+    
+  }
+  .main_content{
+      
+      width:100%;
+      padding:2.5em ;
+  }
+  p{
+      font-family: var(--ff-primary);
+      line-height: 1.5;
+      background-color: var(--clr-neutral-100);
+      width:750px;
+      padding: 3em;
+      box-shadow: 5px 6px 15px 2px #000000;
+
+  }
+
+  .grid_container {
+    padding: 2.5em;
+    background-image: url(images/burlap-wide.jpg);
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(40rem,2fr));  
+    grid-gap:3em;
+  }
+
+
+  
+ 
+  
+  .footer_banner {
+    background-image: url(images/cropped.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh;
+    position: absolute;
+    left: 0;
+    display:flex;
+  }
+  
+  
+  .footer_links {
+    padding: 2em;
+    background-color: #728a58;
+    text-align: center;
+    width:10%;
+  
+   
+  
+  }
+  
